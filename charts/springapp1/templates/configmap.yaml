@@ -3,7 +3,7 @@ apiVersion: v1
 metadata:
   name:  {{ template "fullname" . }}
 data:
-  user.signature: {{ .Values.springapp1.user.signature }}
-  mysql.url: {{ .Values.springapp1.mysql.url }}
-  mysql.user: {{ .Values.springapp1.mysql.user }}
-  mysql.password: {{ .Values.springapp1.mysql.password }}
+  user.signature: {{ .Values.user.signature }}
+  mysql.url: {{ .Values.mysql.url }}
+  mysql.user: {{ .Values.mysql.user }}
+  mysql.password: {{ .Values.mysql.password }}
