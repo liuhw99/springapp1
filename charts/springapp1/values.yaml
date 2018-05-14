@@ -33,9 +33,10 @@ readinessProbe:
 terminationGracePeriodSeconds: 10
 
 springapp1:
-  mysql:
-    url: jdbc:mysql://mysql:3306/?useSSL=false
-    user: root
-    password: welcome1
-  user:
-    signature: Huawei Dev2
+  springapp1:
+    mysql:
+      url: jdbc:mysql://mysql:3306/?useSSL=false
+      user: root
+      password: welcome1
+    user:
+      signature: Huawei Dev2
