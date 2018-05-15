@@ -1,0 +1,29 @@
+version: '3'
+
+services:   
+
+  mysql:
+    restart: always
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: 'welcome1' 
+      MYSQL_USER: 'root'
+      MYSQL_PASS: 'welcome1'
+      MYSQL_DATABASE: 'empidb'
+    volumes:
+      - db_data:/var/lib/mysql
+    ports:
+      - "3306:3306"
+      
+#  webapp:
+#    image: springapp1
+#    depends_on:
+#      - mysql
+#    ports:
+#      - "8080:8080"
+#      - "5005:5005"
+#    environment:
+#      JVM_ARGUMENTS: "-Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=5005"  
+  
+volumes:
+  db_data:

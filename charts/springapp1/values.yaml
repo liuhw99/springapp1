@@ -33,7 +33,7 @@ readinessProbe:
 terminationGracePeriodSeconds: 10
 
 mysql:
-  url: jdbc:mysql://mysql:3306/?useSSL=false
+  url: jdbc:mysql://{{ .Release.Name }}-mysql:3306/empidb?useSSL=false
   user: root
   password: welcome1
 user:
