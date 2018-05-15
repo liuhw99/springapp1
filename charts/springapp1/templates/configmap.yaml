@@ -4,6 +4,6 @@ metadata:
   name:  {{ template "fullname" . }}
 data:
   user.signature: {{ .Values.user.signature }}
-  mysql.url: {{ .Values.mysql.url }}
+  mysql.url: jdbc:mysql://{{ .Release.Name }}-mysql:3306/empidb?useSSL=false
   mysql.user: {{ .Values.mysql.user }}
   mysql.password: {{ .Values.mysql.password }}

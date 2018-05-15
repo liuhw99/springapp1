@@ -44,6 +44,11 @@ spec:
               configMapKeyRef:
                 name: {{ template "fullname" . }}
                 key: user.signature
+          - name: mysql.url
+            valueFrom:
+              configMapKeyRef:
+                name: {{ template "fullname" . }}
+                key: mysql.url
         resources:
 {{ toYaml .Values.resources | indent 12 }}
       terminationGracePeriodSeconds: {{ .Values.terminationGracePeriodSeconds }}
