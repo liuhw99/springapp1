@@ -37,3 +37,9 @@ mysql:
   password: welcome1
 user:
   signature: Huawei Dev2
+  
+mysql:
+  mysqlRootPassword: welcome1
+  mysqlDatabase: empidb
+  persistence:
+    size: 200Mi  
