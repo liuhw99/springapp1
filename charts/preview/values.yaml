@@ -21,4 +21,4 @@ preview:
     tag:
     pullPolicy: IfNotPresent
   user:
-    signature: Huawei Preview
+    signature: Huawei Preview11
